@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "../../Common/Singleton.h"
+#include "../../Common/Singleton_BiliBili.h"
 
 class CDemo
 {

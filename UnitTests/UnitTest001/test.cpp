@@ -32,11 +32,6 @@ TEST(TestSingleton, SingleThread)
 	EXPECT_EQ(pSingleton->getTestData(), 1);
 }
 
-//TEST(TestSingleton, SingletonError)
-//{
-//	testWithMultThread<SingleThread::CSingleton>();
-//}
-
 TEST(TestSingleton, UseMutex)
 {
 	testWithMultThread<UseMutex::CSingleton>();
@@ -73,4 +68,3 @@ TEST(TestSingleton, Singleton)
 
 	EXPECT_EQ(pDemo->getName(), "CDemo");
 }
-

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6a4f74ba-d1a0-4769-95be-6484da366f1e}</ProjectGuid>
-    <RootNamespace>Common</RootNamespace>
+    <ProjectGuid>{3e452692-aebf-4eab-af97-3dfeca4d6ac4}</ProjectGuid>
+    <RootNamespace>Reflection</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -133,26 +133,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClassFactory.cpp" />
+    <ClCompile Include="ClassRegister.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Singleton_CallOnce.cpp" />
-    <ClCompile Include="Singleton_DoubleCheckLock.cpp" />
-    <ClCompile Include="Singleton_MemoryFence.cpp" />
-    <ClCompile Include="Singleton_SingleThread.cpp" />
-    <ClCompile Include="Singleton_UseMutex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClassFactory.h" />
+    <ClInclude Include="ClassRegister.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Singleton.h" />
-    <ClInclude Include="Singleton_BiliBili.h" />
-    <ClInclude Include="Singleton_CallOnce.h" />
-    <ClInclude Include="Singleton_DoubleCheckLock.h" />
-    <ClInclude Include="Singleton_MemoryFence.h" />
-    <ClInclude Include="Singleton_SingleThread.h" />
-    <ClInclude Include="Singleton_StaticLocalVariable.h" />
-    <ClInclude Include="Singleton_UseMutex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{6a4f74ba-d1a0-4769-95be-6484da366f1e}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

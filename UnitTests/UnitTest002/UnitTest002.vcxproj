@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{d7ab8fbc-34d0-4131-8654-34d7c0dbe9e7}</ProjectGuid>
+    <ProjectGuid>{97b7763c-956b-486e-94ec-6d2de52f5704}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <ConfigurationType>Application</ConfigurationType>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <ProjectName>UnitTest001(Singleton)</ProjectName>
+    <ProjectName>UnitTest002(Reflection)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -34,7 +34,6 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
-    <ClInclude Include="Demo.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -47,8 +46,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common.vcxproj">
-      <Project>{6a4f74ba-d1a0-4769-95be-6484da366f1e}</Project>
+    <ProjectReference Include="..\..\Reflection\Reflection.vcxproj">
+      <Project>{3e452692-aebf-4eab-af97-3dfeca4d6ac4}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

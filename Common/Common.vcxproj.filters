@@ -2,9 +2,50 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Singleton_CallOnce.cpp">
+      <Filter>SingletonExtras</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton_DoubleCheckLock.cpp">
+      <Filter>SingletonExtras</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton_MemoryFence.cpp">
+      <Filter>SingletonExtras</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton_SingleThread.cpp">
+      <Filter>SingletonExtras</Filter>
+    </ClCompile>
+    <ClCompile Include="Singleton_UseMutex.cpp">
+      <Filter>SingletonExtras</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Singleton_BiliBili.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton_CallOnce.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton_DoubleCheckLock.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton_MemoryFence.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton_SingleThread.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton_StaticLocalVariable.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton_UseMutex.h">
+      <Filter>SingletonExtras</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="SingletonExtras">
+      <UniqueIdentifier>{8e97bd09-88df-47b3-af05-947b33324f41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
