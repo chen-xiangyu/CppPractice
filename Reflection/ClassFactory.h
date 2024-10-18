@@ -10,6 +10,7 @@ namespace hiveReflection
 	class CClassFactory : public hiveCommon::CSingleton<CClassFactory>
 	{
 		friend class hiveCommon::CSingleton<CClassFactory>;
+
 	public:
 		~CClassFactory() = default;
 
@@ -18,5 +19,8 @@ namespace hiveReflection
 
 	private:
 		std::map<std::string, createObject> m_ClassMap;
+
+	private:
+		CClassFactory() = default;
 	};
 }

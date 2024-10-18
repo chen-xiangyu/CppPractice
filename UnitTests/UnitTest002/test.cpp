@@ -1,6 +1,12 @@
 #include "pch.h"
+#include "Demo.h"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(TestReflection, RegisterClass)
+{
+	hiveReflection::CClassFactory* pFactory = hiveReflection::CClassFactory::getInstance();
+	
+	CDemo* pDemo = static_cast<CDemo*>(pFactory->createClass("CDemo"));
+	
+	EXPECT_EQ(pDemo->getName(), "CDemo");
+	EXPECT_EQ(pDemo->getAge(), 666);
 }
