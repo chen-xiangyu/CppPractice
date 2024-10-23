@@ -5,11 +5,15 @@
     <ClCompile Include="ClassFactory.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ClassRegister.cpp" />
+    <ClCompile Include="ClassField.cpp" />
+    <ClCompile Include="ClassMethod.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ClassFactory.h" />
     <ClInclude Include="ClassRegister.h" />
+    <ClInclude Include="ClassField.h" />
+    <ClInclude Include="ClassMethod.h" />
   </ItemGroup>
 </Project>

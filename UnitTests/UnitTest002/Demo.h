@@ -9,7 +9,7 @@ public:
 	const std::string& getName() const { return m_Name; }
 	int getAge() const { return m_Age; }
 
-private:
+public:
 	std::string m_Name;
 	int m_Age;
 };
